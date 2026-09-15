@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <style>
+      .badge-text { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; letter-spacing: 4px; fill: #F4E9D8; }
+      .badge-text-sm { font-family: Georgia, 'Times New Roman', serif; font-weight: 600; letter-spacing: 3px; fill: #F4E9D8; }
+    </style>
+    <path id="topArc" d="M 80,320 A 190,190 0 1 1 420,320" fill="none"/>
+    <path id="bottomArc" d="M 80,180 A 190,190 0 1 0 420,180" fill="none"/>
+    <radialGradient id="lensGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#c3e88d"/>
+      <stop offset="100%" stop-color="#7CAF34"/>
+    </radialGradient>
+  </defs>
+
+  <!-- outer ring -->
+  <circle cx="250" cy="250" r="240" fill="#1B7A7A"/>
+  <circle cx="250" cy="250" r="228" fill="none" stroke="#F4E9D8" stroke-width="2"/>
+  <circle cx="250" cy="250" r="200" fill="#F4E9D8"/>
+  <circle cx="250" cy="250" r="196" fill="none" stroke="#1B7A7A" stroke-width="2"/>
+
+  <!-- arched badge text -->
+  <text class="badge-text" font-size="27">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">PERRO FR&#205;O</textPath>
+  </text>
+  <text class="badge-text-sm" font-size="15">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">FROZEN MARGARITA BAR</textPath>
+  </text>
+
+  <!-- small lime accents flanking bottom text -->
+  <circle cx="97" cy="272" r="4" fill="#FF5A5F"/>
+  <circle cx="403" cy="272" r="4" fill="#FF5A5F"/>
+
+  <!-- ================= FRENCHIE ================= -->
+  <g>
+    <!-- ears (Frenchie "bat ears": wide base, rounded tip) -->
+    <path d="M 155,235 C 130,180 130,120 158,88 C 205,95 225,150 218,215 C 210,240 178,248 155,235 Z" fill="#3A2A22"/>
+    <path d="M 345,235 C 370,180 370,120 342,88 C 295,95 275,150 282,215 C 290,240 322,248 345,235 Z" fill="#3A2A22"/>
+    <path d="M 168,215 C 152,172 152,132 170,108 C 200,116 213,155 207,205 C 200,222 180,225 168,215 Z" fill="#7A5A46"/>
+    <path d="M 332,215 C 348,172 348,132 330,108 C 300,116 287,155 293,205 C 300,222 320,225 332,215 Z" fill="#7A5A46"/>
+
+    <!-- head -->
+    <ellipse cx="250" cy="278" rx="118" ry="102" fill="#C9975A"/>
+
+    <!-- cheeks -->
+    <ellipse cx="178" cy="310" rx="34" ry="26" fill="#D9AB70"/>
+    <ellipse cx="322" cy="310" rx="34" ry="26" fill="#D9AB70"/>
+
+    <!-- muzzle mask -->
+    <ellipse cx="250" cy="322" rx="58" ry="44" fill="#8A6238"/>
+    <ellipse cx="250" cy="322" rx="46" ry="34" fill="#FDF6EC"/>
+
+    <!-- nose -->
+    <ellipse cx="250" cy="300" rx="19" ry="14" fill="#241C18"/>
+    <ellipse cx="244" cy="296" rx="4.5" ry="3" fill="#FDF6EC" opacity="0.6"/>
+
+    <!-- mouth -->
+    <path d="M 250,316 Q 250,332 232,338" stroke="#241C18" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 250,316 Q 250,332 268,338" stroke="#241C18" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- tongue -->
+    <path d="M 258,335 C 258,335 300,340 302,368 C 303,388 282,394 268,382 C 256,372 254,350 258,335 Z" fill="#FF5A5F"/>
+    <path d="M 268,352 C 278,360 280,372 276,382" stroke="#D63E43" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- sunglasses -->
+    <rect x="176" y="245" width="66" height="42" rx="16" fill="url(#lensGrad)" stroke="#2B2B2B" stroke-width="7"/>
+    <rect x="258" y="245" width="66" height="42" rx="16" fill="url(#lensGrad)" stroke="#2B2B2B" stroke-width="7"/>
+    <rect x="242" y="260" width="16" height="9" fill="#2B2B2B"/>
+    <path d="M 176,258 C 155,255 150,265 150,275" stroke="#2B2B2B" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 324,258 C 345,255 350,265 350,275" stroke="#2B2B2B" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 186,250 L 200,278" stroke="#F4E9D8" stroke-width="4" opacity="0.5" stroke-linecap="round"/>
+    <path d="M 268,250 L 282,278" stroke="#F4E9D8" stroke-width="4" opacity="0.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= MARGARITA GLASS ================= -->
+  <g transform="translate(250,430)">
+    <path d="M -30,-38 L 30,-38 L 4,4 L 4,26 L 16,26 L 16,34 L -16,34 L -16,26 L -4,26 L -4,4 Z" fill="#FDF6EC" stroke="#2B2B2B" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M -30,-38 L 30,-38 L 4,4 L -4,4 Z" fill="#c3e88d" opacity="0.85"/>
+    <circle cx="-24" cy="-38" r="2.6" fill="#2B2B2B"/>
+    <circle cx="-15" cy="-38" r="2.6" fill="#2B2B2B"/>
+    <circle cx="-6" cy="-38" r="2.6" fill="#2B2B2B"/>
+    <circle cx="3" cy="-38" r="2.6" fill="#2B2B2B"/>
+    <circle cx="12" cy="-38" r="2.6" fill="#2B2B2B"/>
+    <circle cx="21" cy="-38" r="2.6" fill="#2B2B2B"/>
+    <path d="M 30,-38 C 44,-38 46,-20 30,-14 L 4,4" fill="none" stroke="#7CAF34" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
